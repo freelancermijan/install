@@ -85,9 +85,9 @@ Login page brute-forcing
 
 <h1 align="center">Sub Domain Enumeration</h1>
 
-Sub Domain finding using assetfinder+httpx
+Sub Domain finding automation using assetfinder, httpx
 
-    assetfinder -subs-only faculdadeunica.com.br | httpx -random-agent -mc 200,302 -silent -server -tech-detect -status-code | tee path/validsubDomains.txt
+    assetfinder -subs-only vulnweb.com | httpx -ip -random-agent -silent | tee /tmp/validsubDomains.txt
 
 <h1 align="center">CMS Detector</h1>
 
