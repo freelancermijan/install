@@ -10,6 +10,10 @@ Assenfinder install
 
     wget https://github.com/tomnomnom/assetfinder/releases/download/v0.1.1/assetfinder-linux-amd64-0.1.1.tgz && tar -xvzf assetfinder-linux-amd64-0.1.1.tgz && chmod +x assetfinder && sudo mv assetfinder /usr/bin/assetfinder && sudo rm -rf assetfinder-linux-amd64-0.1.1.tgz && assetfinder -h
     
+Httpx install
+
+    wget https://github.com/projectdiscovery/httpx/releases/download/v1.3.1/httpx_1.3.1_linux_amd64.zip && unzip httpx_1.3.1_linux_amd64.zip && sudo mv httpx /usr/bin/httpx && sudo rm -rf httpx_1.3.1_linux_amd64.zip && httpx -h
+    
 Others tools
 
     sudo apt install nmap -y
