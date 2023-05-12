@@ -6,7 +6,10 @@ Wpscan Installation
 
     sudo apt install build-essential libcurl4-openssl-dev libxml2 libxml2-dev libxslt1-dev ruby-dev -y && sudo apt install ruby-full -y && sudo gem install wpscan
    
-   
+Assenfinder install
+
+    wget https://github.com/tomnomnom/assetfinder/releases/download/v0.1.1/assetfinder-linux-amd64-0.1.1.tgz && tar -xvzf assetfinder-linux-amd64-0.1.1.tgz && chmod +x assetfinder && sudo mv assetfinder /usr/bin/assetfinder && assetfinder -h
+    
 Others tools
 
     sudo apt install nmap -y
