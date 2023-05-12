@@ -1,7 +1,11 @@
 Update and Upgrading System
 
     sudo apt update -y && sudo apt upgrade -y && sudo apt autoremove -y
-   
+
+Requirements file install
+
+    pip install -r requirements.txt
+    
 Wpscan Installation
 
     sudo apt install build-essential libcurl4-openssl-dev libxml2 libxml2-dev libxslt1-dev ruby-dev -y && sudo apt install ruby-full -y && sudo gem install wpscan
