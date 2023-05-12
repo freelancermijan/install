@@ -1,4 +1,4 @@
-![nmap](images/nmap.png)
+<h1 align="center">nmap</h1>
 
 useful command
 
