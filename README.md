@@ -83,7 +83,7 @@ Login page brute-forcing
 
     sqlmap -u "http://testphp.vulnweb.com/userinfo.php" --data="uname=abd&pass=abc&login=submit" --dbs
 
-<h1 align="center">Sub Domain Enumeration</h1>
+<h1 align="center">Sub Domain finding automation</h1>
 
 Sub Domain finding automation using assetfinder, httpx
 
