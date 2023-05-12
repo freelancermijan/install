@@ -1,10 +1,13 @@
-    sudo apt update -y && sudo apt upgrade -y && sudo apt autoremove -y
+Update and Upgrading System
 
-    sudo apt install terminator -y
-
-### nmap টুল ইনস্টল কমান্ড:
+   sudo apt update -y && sudo apt upgrade -y && sudo apt autoremove -y
+   
+   
+Others tools
 
     sudo apt install nmap -y
+    
+    sudo apt install terminator -y
 
     sudo apt install vlc -y
 
