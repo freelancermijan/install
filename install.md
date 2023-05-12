@@ -8,7 +8,7 @@ Wpscan Installation
    
 Assenfinder install
 
-    wget https://github.com/tomnomnom/assetfinder/releases/download/v0.1.1/assetfinder-linux-amd64-0.1.1.tgz && tar -xvzf assetfinder-linux-amd64-0.1.1.tgz && chmod +x assetfinder && sudo mv assetfinder /usr/bin/assetfinder && assetfinder -h
+    wget https://github.com/tomnomnom/assetfinder/releases/download/v0.1.1/assetfinder-linux-amd64-0.1.1.tgz && tar -xvzf assetfinder-linux-amd64-0.1.1.tgz && chmod +x assetfinder && sudo mv assetfinder /usr/bin/assetfinder && sudo rm -rf assetfinder-linux-amd64-0.1.1.tgz && assetfinder -h
     
 Others tools
 
