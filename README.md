@@ -5,6 +5,8 @@
 ### useful command
 
     nmap -sV -sC -F 10.10.32.221
+
+    nmap -A -T5 -p- --script vuln 10.10.08.152
     
 ### টার্গেট আইপির ক্ষেত্রে:
 
