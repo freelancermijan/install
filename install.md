@@ -13,6 +13,10 @@ VScode Installation
 Wpscan Installation
 
     sudo apt install build-essential libcurl4-openssl-dev libxml2 libxml2-dev libxslt1-dev ruby-dev -y && sudo apt install ruby-full -y && sudo gem install wpscan
+    
+Remmina Installation
+
+    echo 'deb http://ftp.debian.org/debian stretch-backports main' | sudo tee --append /etc/apt/sources.list.d/stretch-backports.list >> /dev/null && sudo apt update -y && sudo apt install remmina remmina-plugin-rdp remmina-plugin-secret remmina-plugin-spice remmina-plugin-vnc remmina-plugin-xdmcp -y
    
 Assenfinder install
 
