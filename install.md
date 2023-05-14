@@ -6,6 +6,10 @@ Requirements file install
 
     pip install -r requirements.txt
     
+VScode Installation
+
+    wget https://az764295.vo.msecnd.net/stable/3b889b090b5ad5793f524b5d1d39fda662b96a2a/code_1.69.2-1658162013_amd64.deb && sudo mv code_1.69.2-1658162013_amd64.deb /opt/ && sudo apt install /opt/code_1.69.2-1658162013_amd64.deb -y
+
 Wpscan Installation
 
     sudo apt install build-essential libcurl4-openssl-dev libxml2 libxml2-dev libxslt1-dev ruby-dev -y && sudo apt install ruby-full -y && sudo gem install wpscan
