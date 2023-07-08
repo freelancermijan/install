@@ -5,6 +5,10 @@ Update and Upgrading System
 Requirements file install
 
     pip install -r requirements.txt
+
+Go Installation
+
+    wget https://golang.org/dl/go1.20.5.linux-amd64.tar.gz && sudo tar -C /usr/local -xzf go1.20.5.linux-amd64.tar.gz && sudo nano .bashrc && export PATH=$PATH:/usr/local/go/bin && source .bashrc && go version
     
 VScode Installation
 
