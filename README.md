@@ -184,11 +184,11 @@ Full url, output plzintext, include extension, exclude extension, status code, r
 
 Automatic detecting vuln params
 
-    dalfox url http://testphp.vulnweb.com/listproducts.php --waf-evasion --report -o scan_dalfox.txt
+    dalfox url "http://testphp.vulnweb.com/listproducts.php" --waf-evasion --report -o scan_dalfox.txt
 
 single target with custom payload
 
-    dalfox url http://testphp.vulnweb.com/listproducts.php --custom-payload /usr/share/wordlists/SecLists/Fuzzing/XSS/xss-common.txt --waf-evasion --report -o scan_dalfox.txt
+    dalfox url "http://testphp.vulnweb.com/listproducts.php" --custom-payload /usr/share/wordlists/SecLists/Fuzzing/XSS/xss-common.txt --waf-evasion --report -o scan_dalfox.txt
 
 Bulk file
 
