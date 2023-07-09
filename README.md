@@ -178,3 +178,22 @@ Full url, output plzintext, include extension, exclude extension, status code, r
 Full url, output plzintext, include extension, exclude extension, status code, recursive mode+loop, threads
 
     sudo dirsearch --full-url --format plain -o /tmp/scan.txt -e php,html,js --exclude-extensions=xml,ico -i 200,301 -r --deep-recursive 3 -t 20 -w /usr/share/wordlists/SecLists/Discovery/Web-Content/common.txt -u http://testphp.vulnweb.com
+
+
+<h2 align="center">Usage of Dalfox</h2>
+
+Automatic detecting vuln params
+
+    dalfox url http://testphp.vulnweb.com/listproducts.php --waf-evasion --report -o scan_dalfox.txt
+
+single target with custom payload
+
+    dalfox url http://testphp.vulnweb.com/listproducts.php --custom-payload /usr/share/wordlists/SecLists/Fuzzing/XSS/xss-common.txt --waf-evasion --report -o scan_dalfox.txt
+
+Bulk file
+
+    dalfox file param.txt
+
+Bulk file with custom payload
+
+    dalfox file param.txt --custom-payload /usr/share/wordlists/SecLists/Fuzzing/XSS/xss-common.txt
