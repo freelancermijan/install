@@ -1,6 +1,4 @@
-============================
 Files Searching
-============================
 
 Normal scan
 
@@ -12,9 +10,7 @@ Normal scan with regular expresion
 
 
 
-============================
 Extensions Searching
-============================
 
 
     ffuf -u http://testphp.vulnweb.com/indexFUZZ -w /usr/share/wordlists/SecLists/Discovery/Web-Content/web-extensions.txt -v -c | tee ffuf_scan_result.txt
@@ -22,18 +18,14 @@ Extensions Searching
 
 
 
-============================
 Directories Searching
-============================
 
     ffuf -u http://testphp.vulnweb.com/FUZZ -w /usr/share/wordlists/SecLists/Discovery/Web-Content/raft-medium-directories-lowercase.txt -v -c | tee ffuf_scan_result.txt
 
 
 
 
-============================
 Subdomains Searching
-============================
 
     ffuf -u http://FUZZ.vulnweb.com -w /usr/share/wordlists/SecLists/Discovery/DNS/subdomains-top1million-5000.txt -c -v -mc 200 | tee subdomains_ffuf.txt
 
@@ -42,9 +34,7 @@ With Headers
     ffuf -u http://FUZZ.vulnweb.com -w /usr/share/wordlists/SecLists/Discovery/DNS/bitquark-subdomains-top100000.txt -c -v -H "Host: FUZZ.vulnweb.com" | tee subdomains_ffuf.txt
 
 
-============================
 Param Searching
-============================
 
 Finding parameter
 
