@@ -2,6 +2,8 @@ find / -type f -name '*flag*.txt' 2>/dev/null
 
 pip install -r requirements.txt
 
+grep -e 'thm{.*}' -R *
+
 tar -xvzf rockyou.txt.gz
 
 sudo ln -s /opt/sqlmap.py /usr/local/bin/sqlmap
