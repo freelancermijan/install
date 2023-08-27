@@ -6,6 +6,8 @@ grep -e 'thm{.*}' -R *
 
 tar -xvzf rockyou.txt.gz
 
+alias   allremove="sudo apt remove --purge --autoremove "
+
 sudo ln -s /opt/sqlmap.py /usr/local/bin/sqlmap
 
 nc -lvnp 1234
