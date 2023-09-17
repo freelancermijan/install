@@ -5,6 +5,7 @@
 #### https://www.robtex.com
 #### https://viewdns.info/
 #### https://threatintelligenceplatform.com
+#### https://lookup.icann.org/en/
 
 
 ## Subdomain finding
