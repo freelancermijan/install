@@ -9,3 +9,4 @@
 ## Subdomain finding
 #### https://crt.sh/
 #### https://subdomainfinder.c99.nl/
+#### https://securitytrails.com/list/apex_domain/target.com
