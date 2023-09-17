@@ -28,4 +28,18 @@ site:google.com intitle:password
 
 site:google.com allintitle:password
 
+security filetype:pdf
+
+site:google.com intex:contact
+
+link:google.com
+
+define:security
+
+info:google.com
+
+related:security
+
+indexof:security
+
 ```
