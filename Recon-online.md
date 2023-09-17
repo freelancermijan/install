@@ -4,7 +4,7 @@
 #### https://sitereport.netcraft.com
 #### https://www.robtex.com
 #### https://viewdns.info/
-
+#### https://threatintelligenceplatform.com
 
 
 ## Subdomain finding
