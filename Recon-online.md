@@ -47,3 +47,15 @@ related:security
 indexof:security
 
 ```
+## API Dorks
+
+```
+Finding WordPress API User Directories
+inurl:"/wp-json/wp/v2/users"
+
+Discovering Publicly Available API Key Files
+intitle:"index.of" intext:"api.txt"
+
+Unveiling Potentially Interesting API Directories
+inurl:"/api/v1" intext:"index of /"
+```
