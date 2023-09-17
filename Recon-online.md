@@ -6,6 +6,7 @@
 #### https://viewdns.info/
 #### https://threatintelligenceplatform.com
 #### https://lookup.icann.org/en/
+#### https://www.nslookup.io/
 
 
 ## Subdomain finding
