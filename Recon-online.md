@@ -5,9 +5,10 @@
 #### https://www.robtex.com
 #### https://viewdns.info/
 #### https://threatintelligenceplatform.com
-#### https://lookup.icann.org/en/
-#### https://www.nslookup.io/
-#### https://search.censys.io/
+#### https://osintframework.com
+#### https://lookup.icann.org/en
+#### https://www.nslookup.io
+#### https://search.censys.io
 
 
 ## Subdomain finding
