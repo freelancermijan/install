@@ -58,4 +58,10 @@ intitle:"index.of" intext:"api.txt"
 
 Unveiling Potentially Interesting API Directories
 inurl:"/api/v1" intext:"index of /"
+
+Identifying XenAPI SQL Injection Vulnerabilities
+ext:php inurl:"api.php?action=
+
+Exposing Potentially Exposed API Keys
+intitle:"index of" api_key OR "api key" OR apiKey -pool
 ```
