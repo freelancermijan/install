@@ -65,3 +65,7 @@ ext:php inurl:"api.php?action=
 Exposing Potentially Exposed API Keys
 intitle:"index of" api_key OR "api key" OR apiKey -pool
 ```
+## Tricks
+```
+https://appdevtools.com/password-generator
+```
