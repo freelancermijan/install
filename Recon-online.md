@@ -65,6 +65,22 @@ ext:php inurl:"api.php?action=
 Exposing Potentially Exposed API Keys
 intitle:"index of" api_key OR "api key" OR apiKey -pool
 ```
+## Breaches data checker online
+
+#### https://ashley.cynic.al/
+#### https://haveibeenpwned.com/
+#### https://cybernews.com/personal-data-leak-check/
+#### https://www.pcloud.com/pass/free-personal-data-breach-checker
+#### https://www.f-secure.com/en/identity-theft-checker
+#### https://www.avast.com/hackcheck/
+#### https://www.whatismyip.com/data-breach/
+#### https://monitor.firefox.com/
+#### https://namescan.io/freeemailcompromisedcheck
+#### https://scatteredsecrets.com/
+#### https://github.com/alpkeskin/mosint
+#### https://github.com/evilsocket/opensnitch
+
+
 ## Tricks
 ```
 https://appdevtools.com/password-generator
