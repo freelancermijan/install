@@ -26,9 +26,10 @@ https://www.google.com/
 
 site:target.com filetype:php (aspx,swf,wsdl)
 
-site:google.com inurl:php?id=
+site:target.com filetype:php(aspx,swf,wsdl)
 
-site:google.com allinurl:php?id=
+site: target.com inurl:.php?id= (user,book)
+param list link https://github.com/danielmiessler/SecLists/blob/master/Discovery/Web-Content/burp-parameter-names.txt
 
 site:google.com intitle:password
 
