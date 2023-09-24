@@ -23,9 +23,8 @@ https://www.google.com/
 
 
 ```
-site:google.com career
 
-site:google.com career filetype:pdf
+site:target.com filetype:php (aspx,swf,wsdl)
 
 site:google.com inurl:php?id=
 
