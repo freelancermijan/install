@@ -19,6 +19,9 @@
 
 ## google dorks
 
+https://www.google.com/
+
+
 ```
 site:google.com career
 
