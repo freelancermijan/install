@@ -51,19 +51,19 @@ indexof:security
 
 ```
 Finding WordPress API User Directories
-inurl:"/wp-json/wp/v2/users"
+site:target.com inurl:"/wp-json/wp/v2/users"
 
 Discovering Publicly Available API Key Files
-intitle:"index.of" intext:"api.txt"
+site:target.com intitle:"index.of" intext:"api.txt"
 
 Unveiling Potentially Interesting API Directories
-inurl:"/api/v1" intext:"index of /"
+site:target.com inurl:"/api/v1" intext:"index of /"
 
 Identifying XenAPI SQL Injection Vulnerabilities
-ext:php inurl:"api.php?action=
+site:target.com ext:php inurl:"api.php?action=
 
 Exposing Potentially Exposed API Keys
-intitle:"index of" api_key OR "api key" OR apiKey -pool
+site:target.com intitle:"index of" api_key OR "api key" OR apiKey -pool
 ```
 ## Breaches data checker online
 
