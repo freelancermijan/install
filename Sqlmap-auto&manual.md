@@ -1,6 +1,7 @@
 ## Sql Injection automation
 
 Target Domain http://testphp.vulnweb.com
+
 Crawling
 
     sqlmap -u "http://testphp.vulnweb.com" --crawl=2 -v --random-agent --batch -o crawl.txt
