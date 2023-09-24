@@ -27,7 +27,6 @@ https://www.google.com/
 site:target.com filetype:php (aspx,swf,wsdl)
 
 Find Parameter
-
 site:target.com filetype:php(aspx,swf,wsdl)
 
 site: target.com inurl:.php?id= (user,book)
