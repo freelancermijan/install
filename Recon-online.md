@@ -46,10 +46,8 @@ related:security
 
 indexof:security
 
-```
 ## API Dorks
 
-```
 Finding WordPress API User Directories
 site:target.com inurl:"/wp-json/wp/v2/users"
 
@@ -65,6 +63,16 @@ site:target.com ext:php inurl:"api.php?action=
 Exposing Potentially Exposed API Keys
 site:target.com intitle:"index of" api_key OR "api key" OR apiKey -pool
 ```
+
+## Github Dorking
+```
+"target.com" "dev"
+"dev.target.com"
+"target.com" API_key
+"target.com" password
+"api.target.com"
+```
+
 ## Breaches data checker online
 
 #### https://ashley.cynic.al/
