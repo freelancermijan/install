@@ -65,6 +65,8 @@ site:target.com intitle:"index of" api_key OR "api key" OR apiKey -pool
 ```
 
 ## Github Dorking
+
+https://github.com/search?q=
 ```
 "target.com" "dev"
 "dev.target.com"
