@@ -1,0 +1,91 @@
+find git.plugin.zsh file
+find / -type f -name 'git.plugin.zsh' 2>/dev/null
+
+After founded this file, open it by any code editor. 
+
+nano .zinit/omz/plugins/git/git.plugin.zsh
+
+replace this line (alias gf='git fetch') to (alias gfetch='git fetch')
+
+add those line in (.zshrc) or (.bashrc) file 
+export PATH=$PATH:/usr/local/go/bin
+export PATH=$PATH:/home/hunter/go/bin
+export PATH=$PATH:/home/hunter/go/pkg/mod/github.com/tomnomnom/gf@v0.0.0-20200618134122-dcd4c361f9f5/gf-completion.bash
+
+mkdir .gf
+cd .gf
+
+
+sudo git clone https://github.com/tomnomnom/gf.git
+sudo mv /home/hunter/.gf/gf/examples/*.json /home/hunter/.gf/
+sudo rm -rf /home/hunter/.gf/gf
+
+sudo git clone https://github.com/lutfumertceylan/top25-parameter.git
+sudo mv /home/hunter/.gf/top25-parameter/gf-patterns/*.json /home/hunter/.gf/
+sudo rm -rf /home/hunter/.gf/top25-parameter
+
+sudo wget https://raw.githubusercontent.com/bugcrowd/HUNT/master/Burp/conf/issues.json
+
+
+sudo git clone https://github.com/1ndianl33t/Gf-Patterns
+sudo mv Gf-Patterns/*.json /home/hunter/.gf/
+sudo rm -rf /home/hunter/.gf/Gf-Patterns
+
+sudo git clone https://github.com/mrofisr/gf-patterns
+sudo mv gf-patterns/*.json /home/hunter/.gf
+sudo rm -rf /home/hunter/.gf/gf-patterns
+
+sudo git clone https://github.com/robre/gf-patterns
+sudo mv gf-patterns/*.json /home/hunter/.gf
+sudo rm -rf /home/hunter/.gf/gf-patterns
+
+
+sudo git clone https://github.com/r00tkie/grep-pattern.git
+sudo mv grep-pattern/*.json /home/hunter/.gf/
+sudo rm -rf /home/hunter/.gf/grep-pattern
+
+
+sudo git clone https://github.com/dwisiswant0/gf-secrets.git
+sudo mv gf-secrets/.gf/*.json /home/hunter/.gf/
+sudo rm -rf /home/hunter/.gf/gf-secrets
+
+sudo git clone https://github.com/bp0lr/myGF_patterns
+sudo mv myGF_patterns/*.json /home/hunter/.gf/
+sudo rm -rf /home/hunter/.gf/myGF_patterns
+
+
+sudo git clone https://github.com/cypher3107/GF-Patterns.git
+sudo mv GF-Patterns/*.json /home/hunter/.gf
+sudo rm -rf /home/hunter/.gf/GF-Patterns
+
+
+sudo git clone https://github.com/Matir/gf-patterns.git
+sudo mv gf-patterns/*.json /home/hunter/.gf
+sudo rm -rf /home/hunter/.gf/gf-patterns
+
+
+sudo git clone https://github.com/R0X4R/Garud.git
+sudo mv Garud/.github/payloads/patterns/*.json /home/hunter/.gf/ 
+sudo rm -rf /home/hunter/.gf/Garud
+
+
+sudo git clone https://github.com/seqrity/Allin1gf.git
+sudo mv Allin1gf/*.json /home/hunter/.gf/
+sudo rm -rf /home/hunter/.gf/Allin1gf
+
+
+sudo git clone https://github.com/Jude-Paul/GF-Patterns-For-Dangerous-PHP-Functions.git
+sudo mv GF-Patterns-For-Dangerous-PHP-Functions/*.json /home/hunter/.gf/
+sudo rm -rf /home/hunter/.gf/GF-Patterns-For-Dangerous-PHP-Functions
+
+
+sudo git clone https://github.com/NitinYadav00/gf-patterns.git
+sudo mv gf-patterns/*.json /home/hunter/.gf/
+sudo rm -rf /home/hunter/.gf/gf-patterns
+
+
+sudo git clone https://github.com/scumdestroy/YouthCrew-GF-Patterns.git
+sudo mv YouthCrew-GF-Patterns/*.json /home/hunter/.gf
+sudo rm -rf /home/hunter/.gf/YouthCrew-GF-Patterns
+
+echo testphp.vulnweb.com | waybackurls | sort -u >> waybackdata | gf xss | tee -a xssparams.txt
