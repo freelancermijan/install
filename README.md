@@ -1,3 +1,12 @@
+## install
+
+```
+sudo rm -rf install.sh
+sudo wget https://raw.githubusercontent.com/freelancermijan/install/refs/heads/main/install.sh
+sudo chmod +x install.sh
+./install.sh -h
+```
+
 <h1 align="center">nmap</h1>
 
 useful command
