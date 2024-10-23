@@ -41,7 +41,7 @@ fi
 # single site scan functionality
 
 
-if [[ "$1" == "-ins" ]]; then
+if [[ "$1" == "-set" ]]; then
     cd /opt/
     sudo git clone https://github.com/freelancermijan/bsqli.git
     cd bsqli/
