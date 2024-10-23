@@ -3,7 +3,7 @@
 # Function to display usage message
 display_usage() {
     echo "Usage:"
-    echo "     $0 -s http://example.com"
+    echo "     $0 ins"
     echo ""
     echo "Options:"
     echo "  -h               Display this help message"
@@ -33,7 +33,7 @@ check_tools() {
 }
 
 # Check if tool installation check is requested
-if [[ "$1" == "-i" ]]; then
+if [[ "$1" == "-ins" ]]; then
     check_tools
     exit 0
 fi
@@ -42,6 +42,14 @@ fi
 
 
 if [[ "$1" == "-ins" ]]; then
-    
+    cd /opt/
+    sudo git clone https://github.com/freelancermijan/bsqli.git
+    cd bsqli/
+    sudo chmod +x ./*.py
+    cd
+    sudo apt install dos2unix -y
+    sudo dos2unix /opt/bsqli/bsqli.py
+    sudo ln -sf /opt/bsqli/bsqli.py /usr/local/bin/bsqli
+    bsqli -h
     exit 0
 fi
