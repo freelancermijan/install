@@ -33,7 +33,7 @@ check_tools() {
 }
 
 # Check if tool installation check is requested
-if [[ "$1" == "-ins" ]]; then
+if [[ "$1" == "-i" ]]; then
     check_tools
     exit 0
 fi
